@@ -1,8 +1,9 @@
-#rsschool-cv
-##Dmitry Shergin
-====
-###Junior Frontend Developer
-====
+# #rsschool-cv
+
+# ##Dmitry Shergin
+
+# ###Junior Frontend Developer
+
 ###Contact information:
 
 Telegram: @altakane
