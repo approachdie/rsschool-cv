@@ -1,10 +1,14 @@
-# #Dmitry Shergin
+# Dmitry Shergin
 
-# ###Junior Frontend Developer
+### Junior Frontend Developer
 
-###Contact information:
+====
+
+### Contact information:
 
 Telegram: @altakane
 Email: sher4747@gmail.com
+
 ====
-###About me:
+
+### About me:
