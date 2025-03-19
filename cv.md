@@ -1,6 +1,4 @@
-# #rsschool-cv
-
-# ##Dmitry Shergin
+# #Dmitry Shergin
 
 # ###Junior Frontend Developer
 
