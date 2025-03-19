@@ -13,6 +13,10 @@
 
 ### About me:
 
+The man who wants to become a very successful developer. I worked as a web-developer in a web-studio for about half a year, where I gained a lot of knowledge about how everything works. My strength is working while others are doing something else.
+
+---
+
 ### Skills:
 
 - HTML5, CCS3
