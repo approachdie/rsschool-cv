@@ -14,9 +14,19 @@
   </head>
   <body>
     <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <ul class="links">
+            <li><a class="link" href="#about">About me</a></li>
+            <li><a class="link" href="#skills">Skills</a></li>
+            <li><a class="link" href="#courses">Courses</a></li>
+            <li><a class="link" href="#code">Code example</a></li>
+          </ul>
+        </nav>
+      </header>
       <div class="main">
         <div class="left-column">
-          <div class="header">
+          <div class="about">
             <img class="photo" src="./photo.png" alt="my-photo" />
             <h1 class="title">Dmitry Shergin</h1>
             <h2 class="title-color">Junior Front-End Developer</h2>
@@ -25,8 +35,8 @@
             <li class="social">
               <div class="icon">
                 <svg
-                  width="16"
-                  height="16"
+                  width="24"
+                  height="24"
                   viewBox="0 0 10 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +55,8 @@
             <li class="social">
               <div class="icon">
                 <svg
-                  width="16"
-                  height="16"
+                  width="24"
+                  height="24"
                   viewBox="0 0 8 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +75,8 @@
             <li class="social">
               <div class="icon">
                 <svg
-                  width="16"
-                  height="16"
+                  width="24"
+                  height="24"
                   viewBox="0 0 6 8"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +140,7 @@
           </ul>
         </div>
         <div class="right-column">
-          <div class="info">
+          <div class="info" id="about">
             <h3 class="info-title">About me</h3>
             <p class="info-text">
               The man who wants to become a very successful developer. I worked
@@ -139,7 +149,7 @@
               is working while others are doing something else.
             </p>
           </div>
-          <div class="info">
+          <div class="info" id="skills">
             <h3 class="info-title">Skills</h3>
             <p class="info-text">HTML</p>
             <p class="info-text">CSS</p>
@@ -147,14 +157,14 @@
             <p class="info-text">Git</p>
             <p class="info-text">VSCode, WebStorm</p>
           </div>
-          <div class="info">
+          <div class="info" id="courses">
             <h3 class="info-title">Courses</h3>
             <p class="info-text">FreeCodeCamp - Responsive Web Design</p>
             <p class="info-text">
               Stepik - Web Development for Beginners: HTML and CSS
             </p>
           </div>
-          <div class="info">
+          <div class="info" id="code">
             <h3 class="info-title">Code example:</h3>
             <pre class="example">
               <code>function multiply(a, b) {
