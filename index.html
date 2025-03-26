@@ -3,7 +3,397 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <ul class="links">
+            <li><a class="link" href="#about">About me</a></li>
+            <li><a class="link" href="#skills">Skills</a></li>
+            <li><a class="link" href="#courses">Courses</a></li>
+            <li><a class="link" href="#code">Code example</a></li>
+            <li><a class="link" href="#projects">My projects</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="left-column">
+          <div class="about">
+            <img class="photo" src="./photo.png" alt="my-photo" />
+            <h1 class="title">Dmitry Shergin</h1>
+            <h2 class="title-color">Junior Front-End Developer</h2>
+          </div>
+          <ul class="socials">
+            <li class="social">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 10 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.33337 7.33335H1.66671C1.20647 7.33335 0.833374 6.96026 0.833374 6.50002V1.46377C0.852794 1.01775 1.22026 0.666265 1.66671 0.666687H8.33337C8.79361 0.666687 9.16671 1.03978 9.16671 1.50002V6.50002C9.16671 6.96026 8.79361 7.33335 8.33337 7.33335ZM1.66671 2.27835V6.50002H8.33337V2.27835L5.00004 4.50002L1.66671 2.27835ZM2.00004 1.50002L5.00004 3.50002L8.00004 1.50002H2.00004Z"
+                    fill="#79819A"
+                  />
+                </svg>
+              </div>
+              <div class="social-text">
+                <p class="gray">Email</p>
+                <p class="black">sher4747@gmail.com</p>
+              </div>
+            </li>
+            <li class="social">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 8 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.52709 7.55627C1.68452 7.55627 0.924916 7.04872 0.602426 6.27032C0.279935 5.49191 0.458063 4.59588 1.05376 4.00001L1.93793 3.11584L2.52709 3.70501L1.64334 4.58876C1.32753 4.90457 1.2042 5.36487 1.31979 5.79627C1.43538 6.22767 1.77235 6.56463 2.20375 6.68023C2.63515 6.79582 3.09545 6.67248 3.41126 6.35668L4.29501 5.47293L4.88418 6.06251L4.00043 6.94626C3.61046 7.33815 3.07995 7.55779 2.52709 7.55627ZM2.82168 5.76751L2.23251 5.17834L5.17876 2.23209L5.76793 2.82126L2.82209 5.76709L2.82168 5.76751ZM6.06293 4.88376L5.47334 4.29459L6.35709 3.41084C6.6772 3.09598 6.80384 2.63362 6.68886 2.19958C6.57388 1.76555 6.23494 1.42653 5.80093 1.31144C5.36692 1.19636 4.90453 1.32289 4.58959 1.64293L3.70543 2.52668L3.11626 1.93751L4.00043 1.05334C4.81504 0.245828 6.12917 0.248705 6.94024 1.05978C7.75131 1.87085 7.75419 3.18497 6.94668 3.99959L6.06293 4.88334V4.88376Z"
+                    fill="#79819A"
+                  />
+                </svg>
+              </div>
+              <div class="social-text">
+                <p class="gray">Telegram</p>
+                <p class="black">@altakane</p>
+              </div>
+            </li>
+            <li class="social">
+              <div class="icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 6 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.00004 7.75002C2.47376 7.30112 1.98595 6.80899 1.54171 6.27877C0.875041 5.48252 0.0833744 4.29669 0.0833744 3.16669C0.0827835 1.9865 0.793477 0.922267 1.88382 0.470603C2.97416 0.0189394 4.22924 0.268871 5.06338 1.10377C5.6119 1.64986 5.91917 2.39268 5.91672 3.16669C5.91672 4.29669 5.12504 5.48252 4.45837 6.27877C4.01413 6.80899 3.52632 7.30112 3.00004 7.75002ZM3.00004 1.91669C2.55346 1.91669 2.1408 2.15494 1.91751 2.54169C1.69422 2.92844 1.69422 3.40494 1.91751 3.79169C2.1408 4.17844 2.55346 4.41669 3.00004 4.41669C3.6904 4.41669 4.25004 3.85704 4.25004 3.16669C4.25004 2.47633 3.6904 1.91669 3.00004 1.91669Z"
+                    fill="#79819A"
+                  />
+                </svg>
+              </div>
+              <div class="social-text">
+                <p class="gray">Location</p>
+                <p class="black">St.Petersburg, Russia</p>
+              </div>
+            </li>
+          </ul>
+          <p class="lang-title">Languages</p>
+          <ul class="languages">
+            <li class="language">
+              <div class="icon-country">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="flag-icons-gb"
+                  viewBox="0 0 640 480"
+                >
+                  <path fill="#012169" d="M0 0h640v480H0z" />
+                  <path
+                    fill="#FFF"
+                    d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0z"
+                  />
+                  <path
+                    fill="#C8102E"
+                    d="m424 281 216 159v40L369 281zm-184 20 6 35L54 480H0zM640 0v3L391 191l2-44L590 0zM0 0l239 176h-60L0 42z"
+                  />
+                  <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z" />
+                  <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z" />
+                </svg>
+              </div>
+              <div class="lang-text">
+                <p class="black">English</p>
+                <p class="gray">A2</p>
+              </div>
+            </li>
+            <li class="language">
+              <div class="icon-country">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="flag-icons-ru"
+                  viewBox="0 0 640 480"
+                >
+                  <path fill="#fff" d="M0 0h640v160H0z" />
+                  <path fill="#0039a6" d="M0 160h640v160H0z" />
+                  <path fill="#d52b1e" d="M0 320h640v160H0z" />
+                </svg>
+              </div>
+              <div class="lang-text">
+                <p class="black">Russian</p>
+                <p class="gray">Native</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <div class="info" id="about">
+            <h3 class="info-title">About me</h3>
+            <p class="info-text">
+              The man who wants to become a very successful developer. I worked
+              as a web-developer in a web-studio for about half a year, where I
+              gained a lot of knowledge about how everything works. My strength
+              is working while others are doing something else.
+            </p>
+          </div>
+          <div class="info" id="skills">
+            <h3 class="info-title">Skills</h3>
+            <p class="info-text">HTML</p>
+            <p class="info-text">CSS</p>
+            <p class="info-text">JavaScript Basic</p>
+            <p class="info-text">Git</p>
+            <p class="info-text">VSCode, WebStorm</p>
+          </div>
+          <div class="info" id="courses">
+            <h3 class="info-title">Courses</h3>
+            <p class="info-text">FreeCodeCamp - Responsive Web Design</p>
+            <p class="info-text">
+              Stepik - Web Development for Beginners: HTML and CSS
+            </p>
+          </div>
+          <div class="info" id="code">
+            <h3 class="info-title">Code example:</h3>
+            <pre class="example">
+              <code>function multiply(a, b) {
+                return a * b;
+              }</code>
+            </pre>
+          </div>
+          <div class="info" id="projects">
+            <h3 class="info-title">My projects</h3>
+            <a
+              class="link"
+              href="https://github.com/approachdie/stations-filter"
+              >Github link</a
+            >
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <a class="git" href="https://github.com/approachdie"
+          ><svg
+            height="32"
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            version="1.1"
+            width="32"
+            data-view-component="true"
+            class="octicon octicon-mark-github v-align-middle"
+          >
+            <path
+              d="M12 1C5.9225 1 1 5.9225 1 12C1 16.8675 4.14875 20.9787 8.52125 22.4362C9.07125 22.5325 9.2775 22.2025 9.2775 21.9137C9.2775 21.6525 9.26375 20.7862 9.26375 19.865C6.5 20.3737 5.785 19.1912 5.565 18.5725C5.44125 18.2562 4.905 17.28 4.4375 17.0187C4.0525 16.8125 3.5025 16.3037 4.42375 16.29C5.29 16.2762 5.90875 17.0875 6.115 17.4175C7.105 19.0812 8.68625 18.6137 9.31875 18.325C9.415 17.61 9.70375 17.1287 10.02 16.8537C7.5725 16.5787 5.015 15.63 5.015 11.4225C5.015 10.2262 5.44125 9.23625 6.1425 8.46625C6.0325 8.19125 5.6475 7.06375 6.2525 5.55125C6.2525 5.55125 7.17375 5.2625 9.2775 6.67875C10.1575 6.43125 11.0925 6.3075 12.0275 6.3075C12.9625 6.3075 13.8975 6.43125 14.7775 6.67875C16.8813 5.24875 17.8025 5.55125 17.8025 5.55125C18.4075 7.06375 18.0225 8.19125 17.9125 8.46625C18.6138 9.23625 19.04 10.2125 19.04 11.4225C19.04 15.6437 16.4688 16.5787 14.0213 16.8537C14.42 17.1975 14.7638 17.8575 14.7638 18.8887C14.7638 20.36 14.75 21.5425 14.75 21.9137C14.75 22.2025 14.9563 22.5462 15.5063 22.4362C19.8513 20.9787 23 16.8537 23 12C23 5.9225 18.0775 1 12 1Z"
+            ></path>
+          </svg>
+        </a>
+        <p class="year">2025</p>
+        <a class="rss" href="https://rs.school/courses/javascript-ru">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 552.8 205.3"
+          >
+            <style>
+              .st0 {
+                fill: #fff;
+              }
+              .st5,
+              .st7 {
+                fill: #fff;
+                stroke: #000;
+                stroke-width: 4;
+                stroke-miterlimit: 10;
+              }
+              .st7 {
+                fill: none;
+              }
+            </style>
+            <path
+              d="m285.4 68 26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z"
+            />
+            <path
+              d="m133 167.2 24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z"
+            />
+            <path
+              d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z"
+            />
+            <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+            <ellipse
+              transform="rotate(-37.001 420.46 67.88)"
+              class="st0"
+              cx="420.5"
+              cy="67.9"
+              rx="63"
+              ry="51.8"
+            />
+            <defs>
+              <ellipse
+                id="SVGID_1_"
+                transform="rotate(-37.001 420.46 67.88)"
+                cx="420.5"
+                cy="67.9"
+                rx="63"
+                ry="51.8"
+              />
+            </defs>
+            <clipPath id="SVGID_2_">
+              <use xlink:href="#SVGID_1_" overflow="visible" />
+            </clipPath>
+            <g style="clip-path: url(#SVGID_2_)">
+              <path
+                transform="rotate(-37.001 420.82 68.353)"
+                class="st0"
+                d="M330.9-14.2h179.8v165.1H330.9z"
+              />
+              <g id="Layer_2_1_">
+                <defs>
+                  <path
+                    id="SVGID_3_"
+                    transform="rotate(-37.001 420.82 68.353)"
+                    d="M330.9-14.2h179.8v165.1H330.9z"
+                  />
+                </defs>
+                <clipPath id="SVGID_4_">
+                  <use xlink:href="#SVGID_3_" overflow="visible" />
+                </clipPath>
+                <g id="Layer_1-2" style="clip-path: url(#SVGID_4_)">
+                  <ellipse
+                    transform="rotate(-37.001 420.46 67.88)"
+                    class="st0"
+                    cx="420.5"
+                    cy="67.9"
+                    rx="63"
+                    ry="51.8"
+                  />
+                  <defs>
+                    <ellipse
+                      id="SVGID_5_"
+                      transform="rotate(-37.001 420.46 67.88)"
+                      cx="420.5"
+                      cy="67.9"
+                      rx="63"
+                      ry="51.8"
+                    />
+                  </defs>
+                  <clipPath id="SVGID_6_">
+                    <use xlink:href="#SVGID_5_" overflow="visible" />
+                  </clipPath>
+                  <g style="clip-path: url(#SVGID_6_)">
+                    <path
+                      transform="rotate(-37 420.799 68.802)"
+                      class="st0"
+                      d="M357.8 17h125.9v103.7H357.8z"
+                    />
+                    <defs>
+                      <path
+                        id="SVGID_7_"
+                        transform="rotate(-37 420.799 68.802)"
+                        d="M357.8 17h125.9v103.7H357.8z"
+                      />
+                    </defs>
+                    <clipPath id="SVGID_8_">
+                      <use xlink:href="#SVGID_7_" overflow="visible" />
+                    </clipPath>
+                    <ellipse
+                      transform="rotate(-37.001 420.46 67.88)"
+                      class="st5"
+                      cx="420.5"
+                      cy="67.9"
+                      rx="63"
+                      ry="51.8"
+                      style="clip-path: url(#SVGID_8_)"
+                    />
+                    <path
+                      transform="rotate(-37 420.799 68.802)"
+                      d="M357.8 17h125.9v103.7H357.8z"
+                      style="
+                        fill: none;
+                        stroke: #000;
+                        stroke-width: 4;
+                        stroke-miterlimit: 10;
+                        clip-path: url(#SVGID_8_);
+                      "
+                    />
+                    <ellipse
+                      transform="rotate(-37.001 420.46 67.88)"
+                      class="st7"
+                      cx="420.5"
+                      cy="67.9"
+                      rx="63"
+                      ry="51.8"
+                    />
+                    <path
+                      transform="rotate(-37 420.799 68.802)"
+                      class="st0"
+                      d="M357.8 17h125.9v103.7H357.8z"
+                    />
+                    <defs>
+                      <path
+                        id="SVGID_9_"
+                        transform="rotate(-37 420.799 68.802)"
+                        d="M357.8 17h125.9v103.7H357.8z"
+                      />
+                    </defs>
+                    <clipPath id="SVGID_10_">
+                      <use xlink:href="#SVGID_9_" overflow="visible" />
+                    </clipPath>
+                    <ellipse
+                      transform="rotate(-37.001 420.46 67.88)"
+                      class="st5"
+                      cx="420.5"
+                      cy="67.9"
+                      rx="63"
+                      ry="51.8"
+                      style="clip-path: url(#SVGID_10_)"
+                    />
+                    <path
+                      transform="rotate(-37 420.799 68.802)"
+                      d="M357.8 17h125.9v103.7H357.8z"
+                      style="
+                        fill: none;
+                        stroke: #000;
+                        stroke-width: 4;
+                        stroke-miterlimit: 10;
+                        clip-path: url(#SVGID_10_);
+                      "
+                    />
+                    <path
+                      transform="rotate(-37.001 420.82 68.353)"
+                      class="st7"
+                      d="M330.9-14.2h179.8v165.1H330.9z"
+                    />
+                  </g>
+                  <ellipse
+                    transform="rotate(-37.001 420.46 67.88)"
+                    class="st7"
+                    cx="420.5"
+                    cy="67.9"
+                    rx="63"
+                    ry="51.8"
+                  />
+                  <path
+                    d="m392.4 61.3 10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1 9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </footer>
+    </div>
+  </body>
 </html>
